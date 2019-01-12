@@ -1,0 +1,27 @@
+{
+  "name": "bmi-calc",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open"
+  },
+  "author": "Joey Aull",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "regenerator-transform": "^0.12.1",
+    "serve": ">=7.0.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "hyperscript-helpers": "^3.0.3",
+    "prettier": "^1.15.2",
+    "ramda": "^0.25.0",
+    "virtual-dom": "^2.1.1"
+  }
+}
