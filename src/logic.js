@@ -1,12 +1,21 @@
 export function getBMI(feet, inches, pounds) {
-  //convert feet and inches to meters
-  //convert pounds to kg
-  //calculate bmi
-  return NaN;
+  const m = (feet * 12 + inches) * 0.0254;
+  const kg = pounds * 0.453592;
+  const bmi = kg / (m*m);
+  return bmi;
 }
 
 export function getBodyType(bmi) {
-  //return an empty string if bmi is NaN (Not a number)
-  //otherwise return Underweight, Healthy, Overweight, Obese
-  return NaN;
+  if (bmi > 40){
+    return "Obese"
+}
+  if (40 > bmi && bmi > 30){
+    return "Overweight"
+}
+  if (bmi < 20){
+    return "Underweight"
+}
+  else {
+    return "Healthy"
+}
 }

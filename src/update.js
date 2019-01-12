@@ -12,17 +12,17 @@ const update = (action, model) => {
   switch (action.type) {
     case ACTIONS.FEET_VALUE_INPUT: {
       const { feet } = action;
-      return { ...model, feet };
+      return { ...model, feet: parseInt(feet) };
     }
 
     case ACTIONS.INCHES_VALUE_INPUT: {
       const { inches } = action;
-      return { ...model, inches };
+      return { ...model, inches: parseInt(inches) };
     }
 
     case ACTIONS.POUNDS_VALUE_INPUT: {
       const { pounds } = action;
-      return { ...model, pounds };
+      return { ...model, pounds: parseInt(pounds) };
     }
 
     default: {
